@@ -1,5 +1,99 @@
+/* regole generali */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+}
+/* fine regole generali */
+
+
+
+/* debug */
+.debug {
+    border: 1px solid white;
+}
+
+main.debug {
+    height: 1550px;
+    width: 90%;
+}
+/* fine debug */
+
+
+
+/* regole comuni */
+.margin-top-80px {
+    margin-top: 80px;
+}
+
+.margin-bottom-150px {
+    margin-bottom: 150px;
+}
+
+.fixed-top{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.fixed-bottom{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.flex {
+    display: flex;
+}
+/* fine regole comuni */
+
+
+
+/* header */
+header {
+    height: 80px;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+header .view {
+    font-size: 0.8em;
+}
+
+header .speaker-view, header .expand-view {
+    background-color: rgb(74, 74, 74);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    height: 25px;
+    align-items: center;
+}
+
+header .speaker-view i {
+    padding-right: 5px;
+}
+
+header .expand-view {
+    padding-top: 6px; /* icona non centrata */
+}
+/* fine header */
+
+
+
+/* main */
+
+/* fine main */
+
+
+
+/* footer */
+footer {
+    height: 150px;
+}
+/* fine footer */
