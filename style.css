@@ -28,12 +28,24 @@ main.debug {
 
 
 /* regole comuni */
-.margin-top-80px {
-    margin-top: 80px;
+.margin-top-50px {
+    margin-top: 50px;
 }
 
-.margin-bottom-150px {
-    margin-bottom: 150px;
+.margin-bottom-100px {
+    margin-bottom: 100px;
+}
+
+.font-size-2em {
+    font-size: 2em;
+}
+
+.font-size-0_8em {
+    font-size: 0.8em;
+}
+
+.font-size-0_6em {
+    font-size: 0.6em;
 }
 
 .fixed-top{
@@ -51,19 +63,20 @@ main.debug {
 .flex {
     display: flex;
 }
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
 /* fine regole comuni */
 
 
 
 /* header */
 header {
-    height: 80px;
+    height: 50px;
     justify-content: flex-end;
     align-items: flex-start;
-}
-
-header .view {
-    font-size: 0.8em;
 }
 
 header .speaker-view, header .expand-view {
@@ -94,6 +107,28 @@ header .expand-view {
 
 /* footer */
 footer {
-    height: 150px;
+    height: 100px;
+    justify-content: space-between;
+}
+
+footer .nav-left {
+    min-width: 100px;
+    /* width: 15%;
+    justify-content: space-between; */
+}
+
+footer .nav-main {
+    width: 60%;
+    justify-content: space-between;
+}
+
+#green-icon {
+    color: rgb(76, 200, 3);
+}
+
+footer .end-meeting {
+    width: 120px;
+    background-color: rgb(74, 74, 74);
+    color: #f00;
 }
 /* fine footer */
