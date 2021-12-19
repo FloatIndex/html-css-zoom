@@ -6,7 +6,6 @@
 }
 
 body {
-    background-color: #000;
     color: #fff;
     font-family: sans-serif;
 }
@@ -14,59 +13,13 @@ body {
 
 
 
-/* debug */
-.debug {
-    border: 1px solid white;
-}
-
-main.debug {
-    height: 1550px;
-    width: 90%;
-}
-/* fine debug */
-
-
-
 /* regole comuni */
-.margin-top-50px {
-    margin-top: 50px;
-}
-
-.margin-bottom-100px {
-    margin-bottom: 100px;
-}
-
-.font-size-2em {
-    font-size: 2em;
-}
-
 .font-size-0_8em {
     font-size: 0.8em;
 }
 
-.font-size-0_6em {
-    font-size: 0.6em;
-}
-
-.fixed-top{
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-.fixed-bottom{
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
 .flex {
     display: flex;
-}
-
-.flex-center {
-    justify-content: center;
-    align-items: center;
 }
 /* fine regole comuni */
 
@@ -75,8 +28,13 @@ main.debug {
 /* header */
 header {
     height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
     justify-content: flex-end;
     align-items: flex-start;
+    background-color: #000;
 }
 
 header .speaker-view, header .expand-view {
@@ -86,6 +44,7 @@ header .speaker-view, header .expand-view {
     padding: 5px;
     height: 25px;
     align-items: center;
+    cursor: pointer;
 }
 
 header .speaker-view i {
@@ -100,35 +59,69 @@ header .expand-view {
 
 
 /* main */
+main {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    background-color: #000;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+main .partecipant {
+    position: relative;
+    margin: 3px;
+}
+
+main .partecipant img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+main .partecipant .name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
 /* fine main */
 
 
 
 /* footer */
 footer {
-    height: 100px;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
     justify-content: space-between;
+    background-color: rgb(34, 34, 34);
 }
 
-footer .nav-left {
-    min-width: 100px;
-    /* width: 15%;
-    justify-content: space-between; */
+.footer-left, .footer-central, .footer-right {
+    flex-shrink: 0;
 }
 
-footer .nav-main {
-    width: 60%;
-    justify-content: space-between;
+footer .icon {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px 10px;
+    cursor: pointer;
 }
 
 #green-icon {
     color: rgb(76, 200, 3);
 }
 
-footer .end-meeting {
+footer .footer-right {
     width: 120px;
     background-color: rgb(74, 74, 74);
     color: #f00;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 /* fine footer */
